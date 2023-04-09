@@ -48,8 +48,8 @@
     <script>
         const min = new Date(1985, 1, 1)
         const max = new Date()
-        const malicious = Math.floor(Math.random() * 4)
-        if (malicious == 1 || malicious == 2 || malicious == 3) {
+        const malicious = Math.floor(Math.random() * 2)
+        if (malicious == 1) {
             document.getElementById("flagged").innerHTML = "Flagged as malicious: Yes"
         } else {
             document.getElementById("flagged").innerHTML = "Flagged as malicious: No"
