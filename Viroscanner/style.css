@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Imperator;
+    src: url('./fonts/Letters for Learners.ttf')
+  }
+  
+  @font-face {
+    font-family: ImperatorBold;
+    src: url('./fonts/Letters\ for\ Learners\ Outline\ Bold.ttf')
+  }
+  
+  @font-face {
+    font-family: Poppins;
+    src: url('./fonts/Poppins-Regular.ttf')
+  }
+  
+  html {
+    height: 175%;
+    width: 100%;
+    background: linear-gradient(goldenrod, white)
+  }
+  
+  #title-text {
+    font-family: ImperatorBold;
+    text-align: center;
+    font-size: 60px;
+  }
+  
+  #desc {
+    font-family: Imperator;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #input {
+    font-family: Poppins;
+    width: 750px;
+    border-radius: 5px;
+  }
+
+  #form {
+    text-align: center;
+  }
+
+  #send-button {
+    font-family: Poppins;
+    border-radius: 4px;
+  }
+
+  #github-logo {
+    top: 50px;
+    width: 50px;
+    position: relative;
+    top: 365px;
+  }
+
+  #lang-logo {
+    top: 100px;
+    width: 100px;
+    position: relative;
+    top: 370px;
+    left: 20px;
+  }
+
+  #about {
+    position: relative;
+    font-family: Imperator;
+    font-size: 20px;
+    position: relative;
+    top: 355px;
+    left: 550px;
+  }

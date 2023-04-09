@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Imperator;
+    src: url('./fonts/Letters for Learners.ttf')
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(red, orange)
+  }
+
+#progress {
+    width: 100%;
+    background-color: grey;
+}
+
+#title {
+    font-family: Poppins;
+    text-align: center;
+}
+
+#meter {
+    text-align: center;
+    font-family: Imperator;
+}
+
+#bar {
+    width: 100%;
+    height: 50px;
+    background-color: #ccc;
+    position: relative;
+}
+
+#bar .fill {
+    font-family: Poppins;
+    height: 100%;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 0.5s ease;
+}
+
+#antivirus-heading {
+    font-family: Poppins;
+    text-align: center
+}
+
+#avast {
+    font-family: Poppins;
+}
+
+#avg {
+    font-family: Poppins;
+}
+#bit {
+    font-family: Poppins;
+}
+
+#kasp {
+    font-family: Poppins;
+}
+#malbytes {
+    font-family: Poppins;
+}
+#mcafee {
+    font-family: Poppins;
+}
+#norton {
+    font-family: Poppins;
+}
+#virus-type {
+    font-family: Poppins;
+}
+
+#stats {
+    font-family: Poppins;
+    text-align: center
+}
+
+#flagged {
+    font-family: Poppins;
+}
+
+#return-btn {
+    font-family: Poppins;
+    border-radius: 4px;
+}

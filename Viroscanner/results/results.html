@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="results.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">Final Results</h1>
+    <p id="meter">Danger Meter:</p>
+    <body>
+      <div id="bar">
+        <div class="fill" style="width: 0%;"></div>
+      </div>
+      <script>
+        const fill = document.querySelector('#bar .fill');
+        const percentage = Math.floor(Math.random() * 100) + 1;
+        fill.style.width = percentage + '%';
+        fill.innerHTML = percentage + '%';
+      </script>
+    </body>
+    <h2 id="antivirus-heading">What other antiviruses say</h2>
+    <p id="avast"></p>
+    <p id="avg"></p>
+    <p id="bit"></p>
+    <p id="kasp"></p>
+    <p id="malbytes"></p>
+    <p id="mcafee"></p>
+    <p id="norton"></p>
+
+    <script>
+        document.getElementById("avast").innerHTML = "Avast rating: " + Math.floor(Math.random() * 11)
+        document.getElementById("avg").innerHTML = "AVG rating: " + Math.floor(Math.random() * 11)
+        document.getElementById("bit").innerHTML = "Bitdefender rating: " + Math.floor(Math.random() * 11)
+        document.getElementById("kasp").innerHTML = "Kaspersky rating: " + Math.floor(Math.random() * 11)
+        document.getElementById("malbytes").innerHTML = "Malwarebytes rating: " + Math.floor(Math.random() * 11)
+        document.getElementById("mcafee").innerHTML = "McAfee rating: " + Math.floor(Math.random() * 11)
+        document.getElementById("norton").innerHTML = "Norton rating: " + Math.floor(Math.random() * 11)
+    </script>
+
+    <h2 id="stats">Detailed Statistics</h2>
+    <p id="virus-type"></p>
+    <p id="domain-reg-date"></p>
+    <p id="flagged"></p>
+    <script>
+        const min = new Date(1985, 1, 1)
+        const max = new Date()
+        const malicious = Math.floor(Math.random() * 2)
+        if (malicious == 1) {
+            document.getElementById("flagged").innerHTML = "Flagged as malicious: Yes"
+        } else {
+            document.getElementById("flagged").innerHTML = "Flagged as malicious: No"
+        }
+        const types = ["Malware", "Adware", "Scareware", "Spyware", "Trojan", "Ransomware", "PUP"]
+        document.getElementById("virus-type").innerHTML = "Type of virus: " + types[Math.floor(Math.random() * types.length)];
+        document.getElementById("domain-reg-date").innerHTML = "Domain registered on: " + new Date(min.getTime() + Math.random() * (max.getTime() - min.getTime()))
+    </script>
+    <button onclick="window.location.href='../index.html';" id="return-btn">Check another URL</a>
+</body>
+</html>
