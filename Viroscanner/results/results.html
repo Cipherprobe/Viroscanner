@@ -10,7 +10,7 @@
 </head>
 <body>
   <h1 id="title">Final Results</h1>
-    <p id="meter">Danger Meter:</p>
+    <p id="meter">Viroscanner Danger Meter:</p>
     <body>
       <div id="bar">
         <div class="fill" style="width: 0%;"></div>
@@ -48,12 +48,6 @@
     <script>
         const min = new Date(1985, 1, 1)
         const max = new Date()
-        const malicious = Math.floor(Math.random() * 2)
-        if (malicious == 1) {
-            document.getElementById("flagged").innerHTML = "Flagged as malicious: Yes"
-        } else {
-            document.getElementById("flagged").innerHTML = "Flagged as malicious: No"
-        }
         const types = ["Malware", "Adware", "Scareware", "Spyware", "Trojan", "Ransomware", "PUP"]
         document.getElementById("virus-type").innerHTML = "Type of virus: " + types[Math.floor(Math.random() * types.length)];
         document.getElementById("domain-reg-date").innerHTML = "Domain registered on: " + new Date(min.getTime() + Math.random() * (max.getTime() - min.getTime()))
